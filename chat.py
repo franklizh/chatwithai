@@ -1,7 +1,7 @@
 from openai import OpenAI
 
 client = OpenAI(
-    # 输入转发API Key
+    
     api_key="your api key",
     base_url="your api url"
 )
