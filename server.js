@@ -1,4 +1,6 @@
-
+//node后端
+//node server.js
+//postman 测试http://localhost:3000/api/chat，修改body的content
 const cors = require('cors');
 const express = require('express');
 const request = require('request');
@@ -34,10 +36,10 @@ app.post('/api/chat', (req, res) => {
     });
 
     const options = {
-        url: "",
+        url: "",//openai或代理地址
         method: 'POST',
         headers: {
-            'Authorization': "",//api key
+            'Authorization': "",//use your api key
             'Content-Type': 'application/json',
             'Accept': 'application/json'
         },
